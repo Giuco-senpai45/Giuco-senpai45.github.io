@@ -1,5 +1,5 @@
 <script>
-  import { UBB_BACHELORS, UBB_MASTERS } from "../../lib/constants";
+  import { HERMES, UBB_BACHELORS, UBB_MASTERS } from "../../lib/constants";
 
 </script>
 
@@ -77,6 +77,6 @@
   </div>
   
   <div class="description-container">
-    <p class="description-text poppins">In a journey to discover myself I started volunteering and I was part of the HR department for 2 years and currently the Events Manager for <a href={`${UBB_MASTERS}`} target="_blank" class="text-violet-400 hover:text-cyan-400">Societatea Hermes</a>.</p>
+    <p class="description-text poppins">In a journey to discover myself I started volunteering and I was part of the HR department for 2 years and currently the Events Manager for <a href={`${HERMES}`} target="_blank" class="text-violet-400 hover:text-cyan-400">Societatea Hermes</a>.</p>
   </div>
 </section>

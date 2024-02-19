@@ -6,7 +6,7 @@
 
 <style>
   .contact-icon-container {
-    @apply px-5 sm:px-10 md:px-20 lg:px-36
+    @apply px-16 sm:px-20 md:px-28 lg:px-48
   }
   .contact-icon {
     @apply w-full text-3xl sm:text-4xl md:text-5xl lg:text-6xl hover:text-cyan-400
@@ -27,10 +27,10 @@
         <a href={GITHUB_URL} target="_blank" class="contact-icon fa-brands fa-github"></a>
       </div>
       <div class="contact-icon-container">
-        <a href={`mailto:${WORK_MAIL}`} target="_blank" class="contact-icon fa-brands fa-linkedin"></a>
+        <a  href={LINKEDIN_URL} target="_blank" class="contact-icon fa-brands fa-linkedin"></a>
       </div>
       <div class="contact-icon-container">
-        <a href={LINKEDIN_URL} target="_blank" class="contact-icon fa-regular fa-envelope"></a>
+        <a href={`mailto:${WORK_MAIL}`} target="_blank" class="contact-icon fa-regular fa-envelope"></a>
       </div>
     </div>
   </div>

@@ -33,14 +33,17 @@
     {/each}
   </div>
   <div class="flex justify-center space-x-36">
-    <button
-      class="loadprojects-btn"
-      on:click={() => {
-        totalDisplayedProjects += 3;
-      }}
-    >
-      Load more
-    </button>
+    {#if totalDisplayedProjects <= projects.length}
+      <button
+        class="loadprojects-btn"
+        on:click={() => {
+          totalDisplayedProjects += 3;
+        }}
+      >
+        Load more
+      </button>
+    {/if}
+
     {#if totalDisplayedProjects > 6}
       <button
         class="loadprojects-btn"
