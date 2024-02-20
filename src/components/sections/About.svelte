@@ -9,7 +9,7 @@
   }
 
   .card-zoom {
-    @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl w-32 h-32 md:w-44 md:h-44 lg:w-64 lg:h-64 rounded-2xl;
+    @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl w-32 h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 rounded-2xl;
   }
 
   .card-zoom-image {
