@@ -7,7 +7,7 @@
 
 </script>
 
-<main class="flex flex-col flex-1 p-4 space-y-10">
+<main class="flex flex-col flex-1 p-4 mx-14 space-y-10">
   <Introduction />
   <About />
   <Experience />

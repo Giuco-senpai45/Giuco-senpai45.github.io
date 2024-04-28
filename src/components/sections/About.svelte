@@ -5,11 +5,11 @@
 
 <style>
   .about-pics-container {
-    @apply grid md:grid-cols-2 md:px-5 lg:px-5 lg:grid-cols-3 justify-center
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:px-5 lg:px-5 lg:grid-cols-3 justify-center
   }
 
   .card-zoom {
-    @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl w-32 h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 rounded-2xl;
+    @apply relative flex items-center justify-center m-3 overflow-hidden shadow-xl h-32 w-auto rounded-md;
   }
 
   .card-zoom-image {
@@ -17,7 +17,7 @@
   }
 
   .card-zoom-text {
-    @apply absolute text-sm md:text-lg lg:text-xl font-extrabold transition-all duration-500 ease-in-out transform scale-105 md:scale-110 lg:scale-150 text-white opacity-80;
+    @apply absolute text-base xl:text-lg font-extrabold transition-all duration-500 ease-in-out transform scale-105 md:scale-110 lg:scale-150 text-white opacity-80;
   }
 
   .card-zoom:hover .card-zoom-image {
@@ -28,7 +28,7 @@
   }
 
   .description-text {
-    @apply text-sm sm:text-xl md:text-2xl lg:text-3xl;
+    @apply text-sm md:text-lg lg:text-xl;
   }
 
   .description-container {
@@ -39,11 +39,14 @@
 <section id="about" class="grid grid-cols-2 py-20">
   <p class="col-span-2 pb-10 text-center section-title">01. About Me</p>
   <div class="description-container">
-    <p class="description-text poppins">
-      Hello! I'm Daniel, and one of my favorite perks about myself is my endless curiosity.
+    <p class="description-text">
+      Hello!
     </p>
     <break/>
-    <p class="pt-2 description-text poppins">I graduated from <a href={`${UBB_BACHELORS}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">Babeș-Bolyai's Computer Science Bachelors programme</a>
+    <p class="description-text">
+      I'm Daniel, and one of my favorite perks about myself is my endless curiosity.
+    </p>
+    <p class="description-text">I graduated from <a href={`${UBB_BACHELORS}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">Babeș-Bolyai's Computer Science Bachelors programme</a>
       and I'm currently studying <a href={`${UBB_MASTERS}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">Distributed Systems</a> at the same university.
     </p>
   </div>

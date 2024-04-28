@@ -5,33 +5,41 @@
 </script>
 
 <style>
-  .contact-icon-container {
-    @apply px-16 sm:px-20 md:px-28 lg:px-48
-  }
-  .contact-icon {
-    @apply w-full text-3xl sm:text-4xl md:text-5xl lg:text-6xl hover:text-cyan-400
-  }
 </style>
 
-<section id="contact">
-  <p class="col-span-2 pb-5 text-center lg:pb-10 section-title">04. Contact</p>
+<section id="contact" class="flex flex-col items-center">
+  <p class="col-span-2 pb-5 lg:pb-10 section-title text-center">04. Contact</p>
 
-  <div class="p-5 lg:p-10 backdrop-blur-sm">
-    <p class="text-center text-md sm:text-lg md:text-xl lg:text-2xl poppins">
-      Have a product idea or just want to chat? My inbox is open for all.
-      Whether you have a question or just want to say hi, I'll try my best to
-      get back to you!
-    </p>
-    <div class="grid items-center grid-cols-3 pt-5 text-center md:pt-10">
-      <div class="contact-icon-container">
-        <a href={GITHUB_URL} target="_blank" class="contact-icon fa-brands fa-github"></a>
-      </div>
-      <div class="contact-icon-container">
-        <a  href={LINKEDIN_URL} target="_blank" class="contact-icon fa-brands fa-linkedin"></a>
-      </div>
-      <div class="contact-icon-container">
-        <a href={`mailto:${WORK_MAIL}`} target="_blank" class="contact-icon fa-regular fa-envelope"></a>
-      </div>
+  <div class="grid grid-cols-2 max-w-3xl justify-center py-10">
+    <div class="space-y-2 px-4 border-r-2 border-slate-700">
+      <h4 class="text-3xl text-amber-500 font-semibold">Want to chat?</h4>
+      <p class="text-lg poppins">
+        My inbox is open for all.
+        Whether you have a question or just want to say hi, I'll try my best to
+        get back to you!
+      </p>
+    </div>
+    <div class="flex text-xl px-14 pt-2">
+      <ul class="space-y-2">
+        <li>
+          <a href={GITHUB_URL} target="_blank">
+            <i class="fa-brands fa-github" />
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href={LINKEDIN_URL} target="_blank">
+            <i class="fa-brands fa-linkedin" />
+            Linkedin
+          </a>
+        </li>
+        <li>
+          <a href={`mailto:${WORK_MAIL}`} target="_blank">
+            <i class="fa-regular fa-envelope" />
+            E-mail
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

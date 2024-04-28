@@ -14,7 +14,7 @@
 
 <title>Ardelean Daniel | Software Engineer</title>
 
-<div class="relative flex flex-col max-w[1400px] mx-auto w-full text0sm sm:text-base min-h-screen">
+<div class="relative flex flex-col max-w[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
     <div class={"fixed bottom-0 w-full duration-200 flex p-10 z-[10]" + (
         y > 0 ? ' opacity-0 pointer-events-auto' : ' pointer-events-none opacity-0'
     )}>
