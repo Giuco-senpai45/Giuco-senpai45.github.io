@@ -11,7 +11,7 @@
 >
   <div class="flex flex-col gap-2 text-center">
     <p class="pb-10 text-center section-title">03. Projects</p>
-    <div class="backdrop-blur-sm max-w-3xl text-justify self-center">
+    <div class="self-center max-w-3xl text-justify backdrop-blur-sm">
       <p class="mb-10 sm:text-lg md:text-xl poppins">
         Below I've selected some of my more "consistent" personal projects. Most
         of them either peak from a consistency (lots of coding) or from a

@@ -1,6 +1,71 @@
 // place files you want to import through the `$lib` alias in this folder.
 const projects = [
   {
+    name: "Multipath variants 4 congestion control",
+    description:
+      "Multiple paths means multiple providers, which have separate hardware infrastructure, essentially improving points of failure and making use of horizontal scaling to avoid the congestion of the network. I used a network simulation language and created a virtual topology that implemented a multipath wrapper which used the NADA algorithm for congestion control. Overall improvements in almost every metric. Higher packet throughput, better experience quality for the users, avoided the known issue of buffer starvation.",
+    link: "https://github.com/Giuco-senpai45/multipath-variants-for-congestion-control",
+    langs: [
+      "C++",
+      "ns-3",
+      "Networking",
+      "Congestion control",
+      "WebRTC",
+    ],
+    image: "images/projects/mp.png",
+  },
+  {
+    name: "Distributed Database simulated bank",
+    description: "Correctly implemented a Multiversion Concurrency Control (MVCC) algorithm in order to avoid the common pitfalls of distributed databases. The project simulates a bank with multiple branches, each branch being a node in the distributed database. Each branch can process transactions (withdraw, deposit, transfer) and the data is replicated across all nodes. The system is resilient to node failures and network partitions, ensuring that the database remains consistent and available.",
+    link: "https://github.com/Giuco-senpai45/distributed-transactions",
+    langs: [
+      "Go",
+      "Vue",
+      "Distributed transactions",
+      "Concurrency control",
+      "Process algebrae",
+      "Python",
+      "Locust",
+      "Postgres",
+      "Docker",
+    ],
+    image: "images/projects/mvcc.png",
+  },
+  {
+    name: "WiFi Analyzer",
+    description: "Correctly understand the IEEE 802.11 architecture. Manually parse raw data captured by the network interface card. Developed a desktop app using Tauri for the low-level capabilities of Rust. Analyzed and correctly parsed and interpreted the incoming beacon packets from nearby WiFi networks. Implemented a packet sniffer to monitor existing traffic. App correctly scans nearby WiFi routers with signal strengths and possibility to connect to them and sniff existing traffic.",
+    link: "https://github.com/Giuco-senpai45/wifi-analyzer",
+    langs: [
+      "802.11",
+      "Networking",
+      "Rust",
+      "Tauri",
+      "Sveltekit",
+      "C++",
+      "Linux",
+      "Wireshark",
+      "Aircrack-ng",
+      "Packet analysis",
+      "Network security",
+    ],
+    // image: "images/projects/mvcc.png",
+  },
+  {
+    name: "Task Tracker",
+    description: "Correctly implement failover and load balancing mechanisms in distributed systems. Microservice architecture implying 3 services. An authentication service (protects routes with JWT's), a task tracking service and a notification service that checks periodically for deadlines using the Kafka Producer/Consumer pattern. Load-balancing and failover are managed by a Nginx reverse proxy.",
+    link: "https://github.com/Giuco-senpai45/task-tracker",
+    langs: [
+      "Go",
+      "Postgres",
+      "Kafka",
+      "Docker",
+      "Nginx",
+      "Microservices",
+      "Load balancing",
+    ],
+    // image: "images/projects/mvcc.png",
+  },
+  {
     name: "JamSpot",
     description:
       "JamSpot represents a platform that lets users explore their musical tastes by providing an interaction with a hybrid music recommender system which will react to their preferences. I developed this project fueled by my passion about music. I knew that recommender systems were an important part of the Internet and I wanted to learn more about them. This project got me into the world of recommender systems and inmy research I chose to develop a hybrid ensemble of two recommender systems that complement each other by cover-ing the particular caveats that each of them have individually",
@@ -65,6 +130,34 @@ const projects = [
 ];
 
 export const work_experiences = [
+  {
+    title: "Co-Founder & CTO",
+    technologies: ["Golang", "VueJS", "C++", "Docker", "Deep Learning", "Embedded Systems", "Arduino"],
+    start: "July 2024",
+    end: "Ongoing",
+    company: "NeuroRevive",
+    description: [
+      "Principal software engineer, currently maintaining the whole software ecosystem",
+      "Architect and actively develop intelligent software solutions",
+      "Research current landscape of healthcare applied artificial intelligence",
+      "Create a modern infrastructure and seamless deployment",
+    ],
+    link: "https://www.neurorevive.eu",
+  },
+  {
+    title: "Full-Stack Engineer",
+    technologies: ["Golang", "VueJS", ".NET", "C++", "Jenkins"],
+    start: "October 2024",
+    end: "Ongoing",
+    company: "OpenText",
+    description: [
+      "Member of the Load Runner Performance team.",
+      "Maintaining and actively developing new features on enterprise grade software (Virtual User Generator)",
+      "Work with and modernize existing legacy code",
+      "Active member in the company wide AI first transistion",
+    ],
+    link: "https://www.opentext.com",
+  },
   {
     title: "Backend Developer",
     technologies: ["Golang", "ExpressJS", "Docker", "Kubernetes", "AWS EKS"],

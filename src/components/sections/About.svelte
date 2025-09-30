@@ -1,5 +1,5 @@
 <script>
-  import { HERMES, UBB_BACHELORS, UBB_MASTERS } from "../../lib/constants";
+  import { HERMES, UBB_BACHELORS, UBB_MASTERS, UBB_PHD } from "../../lib/constants";
 
 </script>
 
@@ -47,7 +47,10 @@
       I'm Daniel, and one of my favorite perks about myself is my endless curiosity.
     </p>
     <p class="description-text">I graduated from <a href={`${UBB_BACHELORS}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">Babeș-Bolyai's Computer Science Bachelors programme</a>
-      and I'm currently studying <a href={`${UBB_MASTERS}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">Distributed Systems</a> at the same university.
+      followed by a master's in <a href={`${UBB_MASTERS}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">Distributed Systems</a> at the same university.
+      Currently I'm pursuing a <a href={`${UBB_PHD}`} target="_blank" class="text-violet-400 hover:text-cyan-400 ">PhD in the field of Artificial Intelligence for Healthcare</a> . 
+      <br/>
+      My research focuses mainly on: Computer Vision, Deep Learning, applied on medical recuperation devices.
     </p>
   </div>
   <div class="about-pics-container">
@@ -80,6 +83,8 @@
   </div>
   
   <div class="description-container">
-    <p class="description-text poppins">In a journey to discover myself I started volunteering and I was part of the HR department for 2 years and currently the Events Manager for <a href={`${HERMES}`} target="_blank" class="text-violet-400 hover:text-cyan-400">Societatea Hermes</a>.</p>
+    <p class="description-text poppins">In a journey to discover myself I started volunteering and I was part of the HR department for 2 years followed by a year in the leading board as the Events Manager for <a href={`${HERMES}`} target="_blank" class="text-violet-400 hover:text-cyan-400">Societatea Hermes</a>.
+      Currently I'm maintaining the IT infrastructure of the organization where I also coordinate volunteer teams for revamping old websites.
+    </p>                  
   </div>
 </section>

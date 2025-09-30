@@ -10,8 +10,12 @@
             experienceIndex = 0;
         } else if (currentExperience == "exp2") {
             experienceIndex = 1;
-        } else {
+        } else if (currentExperience == "exp3") {
             experienceIndex = 2;
+        } else if (currentExperience == "exp4") {
+            experienceIndex = 3;
+        } else if (currentExperience == "exp5") {
+            experienceIndex = 4;
         }
     }
 </script>
@@ -31,14 +35,22 @@
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-10 place-items-center backdrop-blur-sm">
         <ul class="space-y-5 border-l-2">
             <li>
-                <button id="exp1" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp1"}>Backend Academy Golang</button>
+                <button id="exp1" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp1"}>Co-Founder & CTO</button>
 
             </li>
             <li>
-                <button id="exp2" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp2"}>Junior Full-Stack Developer</button>
+                <button id="exp2" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp2"}>Full-Stack Engineer</button>
+
             </li>
             <li>
-                <button id="exp3" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp3"}>Internship Backend Ruby on Rails</button>
+                <button id="exp3" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp3"}>Backend Academy Golang</button>
+
+            </li>
+            <li>
+                <button id="exp4" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp4"}>Junior Full-Stack Developer</button>
+            </li>
+            <li>
+                <button id="exp5" on:click={changeExperienceCard} class="experience-list-item poppins" class:activexp={currentExperience === "exp5"}>Internship Backend Ruby on Rails</button>
             </li>
         </ul>
 
