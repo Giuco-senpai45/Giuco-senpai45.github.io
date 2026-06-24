@@ -41,7 +41,7 @@ const leavingPic = () => {
       <a
         :href="`mailto:${WORK_MAIL}`"
         target="_blank"
-        class="relative items-center self-start block px-6 py-3 mx-5 overflow-hidden transition-all ring-cyan-600 ring-2 btn group sm:text-lg md:text-xl poppins"
+        class="relative items-center self-start block px-6 py-3 mx-5 overflow-hidden transition-all ring-cyan-600 ring-2 group sm:text-lg md:text-xl poppins"
       >
         <span class="z-10 w-full transition-colors duration-300 ease-in-out">
           Get in touch &rarr;

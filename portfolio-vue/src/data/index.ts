@@ -23,7 +23,7 @@ export const projects: Project[] = [
       'Multiple paths means multiple providers, which have separate hardware infrastructure, essentially improving points of failure and making use of horizontal scaling to avoid the congestion of the network. I used a network simulation language and created a virtual topology that implemented a multipath wrapper which used the NADA algorithm for congestion control. Overall improvements in almost every metric. Higher packet throughput, better experience quality for the users, avoided the known issue of buffer starvation.',
     link: 'https://github.com/Giuco-senpai45/multipath-variants-for-congestion-control',
     langs: ['C++', 'ns-3', 'Networking', 'Congestion control', 'WebRTC'],
-    image: 'images/projects/mp.png',
+    image: '/images/projects/mp.png',
   },
   {
     name: 'Distributed Database simulated bank',
@@ -31,7 +31,7 @@ export const projects: Project[] = [
       'Correctly implemented a Multiversion Concurrency Control (MVCC) algorithm in order to avoid the common pitfalls of distributed databases. The project simulates a bank with multiple branches, each branch being a node in the distributed database. Each branch can process transactions (withdraw, deposit, transfer) and the data is replicated across all nodes. The system is resilient to node failures and network partitions, ensuring that the database remains consistent and available.',
     link: 'https://github.com/Giuco-senpai45/distributed-transactions',
     langs: ['Go', 'Vue', 'Distributed transactions', 'Concurrency control', 'Process algebrae', 'Python', 'Locust', 'Postgres', 'Docker'],
-    image: 'images/projects/mvcc.png',
+    image: '/images/projects/mvcc.png',
   },
   {
     name: 'WiFi Analyzer',
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       'JamSpot represents a platform that lets users explore their musical tastes by providing an interaction with a hybrid music recommender system which will react to their preferences. I developed this project fueled by my passion about music. I knew that recommender systems were an important part of the Internet and I wanted to learn more about them. This project got me into the world of recommender systems and in my research I chose to develop a hybrid ensemble of two recommender systems that complement each other by covering the particular caveats that each of them have individually',
     link: 'https://github.com/Giuco-senpai45/Jamspot',
     langs: ['Python', 'Pandas', 'Prisma', 'Svelte', 'SciKitLearn', 'TypeScript'],
-    image: 'images/projects/jamspot.png',
+    image: '/images/projects/jamspot.png',
   },
   {
     name: 'Microservices Cluster',
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       'This project presents itself as 5 different services: Broker, Authenticator, Logger, Emailer and Listener. These services can communicate with each other by 3 distinct methods: HTTP calls with JSON payloads, RCP calls and gRCP calls. The "client" was simulated by requests realized in Postman. These services communicate with 2 different databases (Mongo and Postgres) and are containerized in Docker containers to be orchestrated using Kubernetes.',
     link: 'https://github.com/Giuco-senpai45/go-microservices',
     langs: ['Go', 'gRPC', 'RabbitMQ', 'Docker', 'Kubernetes', 'Mongo'],
-    image: 'images/projects/micros.png',
+    image: '/images/projects/micros.png',
   },
   {
     name: 'Lucene Search Engine',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       'This projects creates a search engine on a dataset consisting of various Wikipedia pages, which are parsed and built into an inverted index. This project was made in order to materialize techniques learned in my Data mining course, in particular this project creates an optimized inverted index through various processing steps (tokenization, lemmatization and compression). The resulted inverted index was then tested with various metrics to prove it\'s effectiveness.',
     link: 'https://github.com/Giuco-senpai45/DM_UBB-2023.git',
     langs: ['Java', 'Apache Lucene'],
-    image: 'images/projects/invertedindex.png',
+    image: '/images/projects/invertedindex.png',
   },
   {
     name: 'Project Manager',
@@ -77,7 +77,7 @@ export const projects: Project[] = [
       'This project is a backend design for a project management system similar to a Kanban Board. It presents itself as a cluster managed by Kubernetes of 2 different API\'s one in ExpressJs and one in Go. These API\'s also implement a authentication system using JWT and cookies. Only registered and logged in user\'s can create, access and modify their projects.',
     link: 'https://github.com/Giuco-senpai45/project-management',
     langs: ['Go', 'ExpressJS', 'Docker', 'Kubernetes'],
-    image: 'images/projects/pm.png',
+    image: '/images/projects/pm.png',
   },
   {
     name: 'Library Manager',
@@ -85,7 +85,7 @@ export const projects: Project[] = [
       'This projects simulates a library management system letting it\'s user manage books and their authors. The project uses a Postgres database and it was developed using the MVC pattern.',
     link: 'https://github.com/Giuco-senpai45/Library-Management.git',
     langs: ['Java', 'SpringBoot', 'ThymeLeaf', 'Hibernate'],
-    image: 'images/projects/lbm.png',
+    image: '/images/projects/lbm.png',
   },
   {
     name: 'Forkify',
@@ -93,7 +93,7 @@ export const projects: Project[] = [
       'A web application that lets you explore different cooking recipes. Being a static web page the project is hosted using Surge. The recipes data is extracted from an API and they will be modified dynamically based on the number of serving. Users can bookmark recipes (saved in local storage) and they can upload their own recipes (also stored on local storage)',
     link: 'https://github.com/Giuco-senpai45/Forkify-Recipe-Application.git',
     langs: ['JavaScript', 'Sass', 'Axios'],
-    image: 'images/projects/forky.png',
+    image: '/images/projects/forky.png',
   },
   {
     name: 'Mapty',
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       'Show the users general area based on their current location using the Leaflet library. Users can pin 2 types of markers based on a sports activity they had (running or cycling). The marker will store some date (cadence, number of kilometers, elevation), markers are saved in local storage',
     link: 'https://github.com/Giuco-senpai45/Mapty',
     langs: ['JavaScript', 'Leaflet'],
-    image: 'images/projects/mapty.png',
+    image: '/images/projects/mapty.png',
   },
 ]
 

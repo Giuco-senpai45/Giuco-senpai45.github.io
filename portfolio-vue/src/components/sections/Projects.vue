@@ -32,7 +32,7 @@ const totalDisplayed = ref(6)
     </div>
     <div class="flex justify-center space-x-36">
       <button
-        v-if="totalDisplayed <= projects.length"
+        v-if="totalDisplayed < projects.length"
         class="p-5 text-lg backdrop-blur-sm sm:text-xl md:text-2xl font-semibold text-white bg-transparent rounded-xl shadow-md hover:shadow-md hover:shadow-violet-300 hover:translate-y-[2px] border-2 border-violet-700 hover:bg-violet-700 hover:bg-opacity-40"
         @click="totalDisplayed += 3"
       >

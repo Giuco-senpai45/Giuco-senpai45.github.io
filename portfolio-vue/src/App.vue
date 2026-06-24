@@ -30,7 +30,7 @@ const goTop = () => document.body.scrollIntoView()
         @click="goTop"
         class="px-3 ml-auto rounded-full cursor-pointer bg-slate-900 text-violet-400 sm:px-4 hover:bg-slate-800"
       >
-        <i class="grid fa-solid fa-arrow-up place-items-center aspect-square" />
+        <i class="grid fa-solid fa-arrow-up place-items-center aspect-square"></i>
       </button>
     </div>
 
