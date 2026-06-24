@@ -7,6 +7,7 @@ import Introduction from '@/components/sections/Introduction.vue'
 import About from '@/components/sections/About.vue'
 import Experience from '@/components/sections/Experience.vue'
 import Projects from '@/components/sections/Projects.vue'
+import Contact from '@/components/sections/Contact.vue'
 
 const y = ref(0)
 const handleScroll = () => { y.value = window.scrollY }
@@ -39,6 +40,7 @@ const goTop = () => document.body.scrollIntoView()
       <About />
       <Experience />
       <Projects />
+      <Contact />
     </MainContent>
     <Footer />
   </div>
