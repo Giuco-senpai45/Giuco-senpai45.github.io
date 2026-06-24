@@ -6,6 +6,7 @@ import Footer from '@/components/Footer.vue'
 import Introduction from '@/components/sections/Introduction.vue'
 import About from '@/components/sections/About.vue'
 import Experience from '@/components/sections/Experience.vue'
+import Projects from '@/components/sections/Projects.vue'
 
 const y = ref(0)
 const handleScroll = () => { y.value = window.scrollY }
@@ -37,6 +38,7 @@ const goTop = () => document.body.scrollIntoView()
       <Introduction />
       <About />
       <Experience />
+      <Projects />
     </MainContent>
     <Footer />
   </div>
