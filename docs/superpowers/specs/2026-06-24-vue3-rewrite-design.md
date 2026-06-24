@@ -34,7 +34,7 @@ portfolio-vue/
   tsconfig.json
   tailwind.config.js      # copied verbatim
   postcss.config.js       # copied verbatim
-  public/                 # copied verbatim (images/, favicon, logos, wave.gif)
+  public/                 # copy all of static/: images/, assets/, favicon.png, *.svg, .nojekyll
   src/
     main.ts
     App.vue               # replaces +layout.svelte: scroll state, back-to-top, Header + MainContent + Footer
@@ -105,7 +105,7 @@ interface WorkExperience {
 | `{#if cond}` / `{:else}` | `v-if` / `v-else` |
 | `on:click={fn}` | `@click="fn"` |
 | `on:mouseover` / `on:mouseleave` | `@mouseover` / `@mouseleave` |
-| `bind:this={el}` | `const el = useTemplateRef('el')` + `ref="el"` |
+| `bind:this={el}` | `const el = ref<HTMLImageElement \| null>(null)` + `ref="el"` |
 | `class:name={cond}` | `:class="{ name: cond }"` |
 | `{#key val}<div>…</div>` | `:key="val"` on the element |
 | `svelte:window bind:scrollY={y}` | `onMounted(() => window.addEventListener('scroll', ...))` |
