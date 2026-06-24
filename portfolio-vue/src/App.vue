@@ -3,6 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import Header from '@/components/Header.vue'
 import MainContent from '@/components/MainContent.vue'
 import Footer from '@/components/Footer.vue'
+import Introduction from '@/components/sections/Introduction.vue'
 
 const y = ref(0)
 const handleScroll = () => { y.value = window.scrollY }
@@ -31,7 +32,7 @@ const goTop = () => document.body.scrollIntoView()
 
     <Header :y="y" />
     <MainContent>
-      <!-- sections go here in Task 10 -->
+      <Introduction />
     </MainContent>
     <Footer />
   </div>
