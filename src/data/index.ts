@@ -53,6 +53,7 @@ export const projects: Project[] = [
       'Correctly implement failover and load balancing mechanisms in distributed systems. Microservice architecture implying 3 services. An authentication service (protects routes with JWT\'s), a task tracking service and a notification service that checks periodically for deadlines using the Kafka Producer/Consumer pattern. Load-balancing and failover are managed by a Nginx reverse proxy.',
     link: 'https://github.com/Giuco-senpai45/task-tracker',
     langs: ['Go', 'Postgres', 'Kafka', 'Docker', 'Nginx', 'Microservices', 'Load balancing'],
+    image: '/images/projects/tt-diagram.png',
   },
   {
     name: 'JamSpot',
