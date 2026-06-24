@@ -3,11 +3,12 @@ import { ref } from 'vue'
 import ExperienceCard from '@/components/dynamic/ExperienceCard.vue'
 
 const experienceLabels = [
+  'Software Engineer',
   'Co-Founder & CTO',
-  'Full-Stack Engineer',
-  'Backend Academy Golang',
+  'Full-Stack Developer',
   'Junior Full-Stack Developer',
-  'Internship Backend Ruby on Rails',
+  'Backend Developer',
+  'Intern Backend Developer',
 ]
 
 const experienceIndex = ref(0)

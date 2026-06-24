@@ -17,26 +17,18 @@ const row2 = [
   <section id="about" class="grid grid-cols-2 py-20">
     <p class="col-span-2 pb-10 text-center section-title">01. About Me</p>
     <div class="px-5 pt-10 lg:px-10 backdrop-blur-sm">
-      <p class="text-sm md:text-lg lg:text-xl">Hello!</p>
+      <p class="text-sm md:text-lg lg:text-xl">
+        I'm Daniel — driven by an endless curiosity for how things work and how to make them better.
+      </p>
       <br />
       <p class="text-sm md:text-lg lg:text-xl">
-        I'm Daniel, and one of my favorite perks about myself is my endless curiosity.
-      </p>
-      <p class="text-sm md:text-lg lg:text-xl">
-        I graduated from
-        <a :href="UBB_BACHELORS" target="_blank" class="text-violet-400 hover:text-cyan-400">
-          Babes-Bolyai's Computer Science Bachelors programme
-        </a>
-        followed by a master's in
-        <a :href="UBB_MASTERS" target="_blank" class="text-violet-400 hover:text-cyan-400">
-          Distributed Systems
-        </a>
-        at the same university. Currently I'm pursuing a
-        <a :href="UBB_PHD" target="_blank" class="text-violet-400 hover:text-cyan-400">
-          PhD in the field of Artificial Intelligence for Healthcare
-        </a>.
-        <br />
-        My research focuses mainly on: Computer Vision, Deep Learning, applied on medical recuperation devices.
+        I hold a Bachelor's in Computer Science and a Master's in
+        <a :href="UBB_MASTERS" target="_blank" class="text-violet-400 hover:text-cyan-400">Distributed Systems</a>
+        from
+        <a :href="UBB_BACHELORS" target="_blank" class="text-violet-400 hover:text-cyan-400">Babeș-Bolyai University</a>.
+        I'm currently pursuing a
+        <a :href="UBB_PHD" target="_blank" class="text-violet-400 hover:text-cyan-400">PhD focused on Artificial Intelligence for Healthcare</a>,
+        with research in Computer Vision and Deep Learning applied to medical rehabilitation devices.
       </p>
     </div>
 
@@ -74,9 +66,9 @@ const row2 = [
 
     <div class="px-5 pt-10 lg:px-10 backdrop-blur-sm">
       <p class="text-sm md:text-lg lg:text-xl poppins">
-        In a journey to discover myself I started volunteering and I was part of the HR department for 2 years followed by a year in the leading board as the Events Manager for
-        <a :href="HERMES" target="_blank" class="text-violet-400 hover:text-cyan-400">Societatea Hermes</a>.
-        Currently I'm maintaining the IT infrastructure of the organization where I also coordinate volunteer teams for revamping old websites.
+        Beyond code, I spent three years volunteering at
+        <a :href="HERMES" target="_blank" class="text-violet-400 hover:text-cyan-400">Societatea Hermes</a>
+        — two in HR and one as Events Manager on the leadership board. I now maintain their IT infrastructure and lead teams rebuilding their web presence.
       </p>
     </div>
   </section>

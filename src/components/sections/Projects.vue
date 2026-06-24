@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { projects } from '@/data/index'
 import Project from '@/components/dynamic/Project.vue'
 
-const totalDisplayed = ref(6)
+const totalDisplayed = ref(4)
 </script>
 
 <template>
@@ -22,7 +22,7 @@ const totalDisplayed = ref(6)
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
       <Project
         v-for="(project, i) in projects"
         :key="project.name"
@@ -34,14 +34,14 @@ const totalDisplayed = ref(6)
       <button
         v-if="totalDisplayed < projects.length"
         class="p-5 text-lg backdrop-blur-sm sm:text-xl md:text-2xl font-semibold text-white bg-transparent rounded-xl shadow-md hover:shadow-md hover:shadow-violet-300 hover:translate-y-[2px] border-2 border-violet-700 hover:bg-violet-700 hover:bg-opacity-40"
-        @click="totalDisplayed += 3"
+        @click="totalDisplayed += 2"
       >
         Load more
       </button>
       <button
-        v-if="totalDisplayed > 6"
+        v-if="totalDisplayed > 4"
         class="p-5 text-lg backdrop-blur-sm sm:text-xl md:text-2xl font-semibold text-white bg-transparent rounded-xl shadow-md hover:shadow-md hover:shadow-violet-300 hover:translate-y-[2px] border-2 border-violet-700 hover:bg-violet-700 hover:bg-opacity-40"
-        @click="totalDisplayed -= 3"
+        @click="totalDisplayed -= 2"
       >
         See less
       </button>
