@@ -17,7 +17,7 @@ const tabs = [
     <!-- Welcome (top only, hidden on small screens) -->
     <div v-if="y <= 0" class="hidden sm:flex items-center space-x-3 mr-auto">
       <p class="text-base sm:text-xl md:text-2xl lg:text-3xl poppins text-white">Welcome</p>
-      <img src="/images/wave.gif" alt="wave" class="rounded-full max-h-8 sm:max-h-12 bg-slate-800 opacity-80" />
+      <span class="wave-icon text-2xl sm:text-3xl md:text-4xl" aria-hidden="true">👋</span>
     </div>
 
     <!-- Nav pill when scrolled, inline when at top -->
