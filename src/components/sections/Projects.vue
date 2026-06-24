@@ -3,26 +3,21 @@ import { ref } from 'vue'
 import { projects } from '@/data/index'
 import Project from '@/components/dynamic/Project.vue'
 
-const totalDisplayed = ref(4)
+const totalDisplayed = ref(6)
 </script>
 
 <template>
-  <section id="projects" class="flex flex-col gap-12 px-5 py-20 lg:gap-24 md:px-7 lg:px-10 lg:py-32">
+  <section id="projects" class="flex flex-col gap-8 md:gap-12 px-2 sm:px-5 py-16 md:py-28 lg:px-10">
     <div class="flex flex-col gap-2 text-center">
-      <p class="pb-10 text-center section-title">03. Projects</p>
-      <div class="self-center max-w-3xl text-justify backdrop-blur-sm">
-        <p class="mb-10 sm:text-lg md:text-xl poppins">
-          Below I've selected some of my more "consistent" personal projects. Most
-          of them either peak from a consistency (lots of coding) or from a
-          technical (a challenging implementation) point of view.
-        </p>
-        <p class="sm:text-lg md:text-xl poppins">
-          For a more detalied view of the projects I highly suggest checking out
-          their github repository.
+      <p class="pb-6 md:pb-10 text-center section-title">03. Projects</p>
+      <div class="self-center max-w-3xl text-justify backdrop-blur-sm px-2">
+        <p class="mb-6 sm:mb-10 text-sm sm:text-base md:text-xl poppins">
+          Below I've selected some of my more "consistent" personal projects — either technically challenging or built with significant depth.
         </p>
       </div>
     </div>
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
+
+    <div class="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-3 lg:gap-8">
       <Project
         v-for="(project, i) in projects"
         :key="project.name"
@@ -30,18 +25,19 @@ const totalDisplayed = ref(4)
         :project="project"
       />
     </div>
-    <div class="flex justify-center space-x-36">
+
+    <div class="flex justify-center gap-4 sm:gap-8">
       <button
         v-if="totalDisplayed < projects.length"
-        class="p-5 text-lg backdrop-blur-sm sm:text-xl md:text-2xl font-semibold text-white bg-transparent rounded-xl shadow-md hover:shadow-md hover:shadow-violet-300 hover:translate-y-[2px] border-2 border-violet-700 hover:bg-violet-700 hover:bg-opacity-40"
-        @click="totalDisplayed += 2"
+        class="px-5 py-3 sm:p-5 text-sm sm:text-lg md:text-xl font-semibold text-white bg-transparent rounded-xl border-2 border-amber-700 hover:bg-amber-700/40 hover:shadow-amber-400/20 hover:shadow-md hover:translate-y-[2px] transition-all duration-200"
+        @click="totalDisplayed += 3"
       >
         Load more
       </button>
       <button
-        v-if="totalDisplayed > 4"
-        class="p-5 text-lg backdrop-blur-sm sm:text-xl md:text-2xl font-semibold text-white bg-transparent rounded-xl shadow-md hover:shadow-md hover:shadow-violet-300 hover:translate-y-[2px] border-2 border-violet-700 hover:bg-violet-700 hover:bg-opacity-40"
-        @click="totalDisplayed -= 2"
+        v-if="totalDisplayed > 6"
+        class="px-5 py-3 sm:p-5 text-sm sm:text-lg md:text-xl font-semibold text-white bg-transparent rounded-xl border-2 border-amber-700 hover:bg-amber-700/40 hover:shadow-amber-400/20 hover:shadow-md hover:translate-y-[2px] transition-all duration-200"
+        @click="totalDisplayed -= 3"
       >
         See less
       </button>

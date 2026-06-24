@@ -19,7 +19,14 @@ const goTop = () => document.body.scrollIntoView()
 </script>
 
 <template>
-  <div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
+  <!-- Background light orbs — sit behind glass panels, bleed through backdrop-blur -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+    <div class="absolute -top-40 -left-20 w-[600px] h-[600px] rounded-full bg-amber-500/20 blur-[140px]"></div>
+    <div class="absolute top-[40%] -right-32 w-[500px] h-[500px] rounded-full bg-violet-600/15 blur-[120px]"></div>
+    <div class="absolute -bottom-32 left-[30%] w-[500px] h-[500px] rounded-full bg-amber-600/15 blur-[130px]"></div>
+  </div>
+
+  <div class="relative flex flex-col max-w-[1800px] mx-auto w-full text-sm sm:text-base min-h-screen">
     <div
       :class="[
         'fixed bottom-0 w-full duration-200 flex p-10 z-[10]',
@@ -28,7 +35,7 @@ const goTop = () => document.body.scrollIntoView()
     >
       <button
         @click="goTop"
-        class="px-3 ml-auto rounded-full cursor-pointer bg-slate-900 text-violet-400 sm:px-4 hover:bg-slate-800"
+        class="px-3 ml-auto rounded-full cursor-pointer bg-slate-900 text-amber-400 sm:px-4 hover:bg-slate-800"
       >
         <i class="grid fa-solid fa-arrow-up place-items-center aspect-square"></i>
       </button>
@@ -45,3 +52,4 @@ const goTop = () => document.body.scrollIntoView()
     <Footer />
   </div>
 </template>
+

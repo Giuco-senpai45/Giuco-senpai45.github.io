@@ -3,5 +3,5 @@ export const UBB_BACHELORS = 'https://www.cs.ubbcluj.ro/education/academic-progr
 export const UBB_MASTERS = 'https://www.cs.ubbcluj.ro/education/academic-programmes/masters-programmes/distributed-systems-in-internet-programme-profile/'
 export const UBB_PHD = 'https://www.cs.ubbcluj.ro/education/academic-programmes/doctoral-programmes/the-doctoral-school-in-mathematics-and-computer-science/'
 export const HERMES = 'https://societateahermes.ro'
-export const LINKEDIN_URL = 'https://www.linkedin.com/in/ardelean-george/'
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/ardelean-daniel/'
 export const GITHUB_URL = 'https://github.com/Giuco-senpai45'

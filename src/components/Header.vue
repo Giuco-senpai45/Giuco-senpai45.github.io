@@ -11,21 +11,31 @@ const tabs = [
 
 <template>
   <header
-    :class="[
-      'sticky z-50 top-0 duration-200 px-20 pb-20 flex items-center justify-between',
-      y > 0 ? 'py-4 bg-slate-950' : 'py-6 backdrop-blur-sm bg-transparent border-transparent'
-    ]"
+    class="sticky top-0 z-50 duration-200 flex items-center px-4 sm:px-10 md:px-20 py-4"
+    :class="y > 0 ? 'justify-center' : 'justify-between'"
   >
-    <div class="hidden sm:flex items-center space-x-5">
-      <template v-if="y <= 0">
-        <p class="text-lg text-white sm:text-xl md:text-2xl lg:text-3xl poppins">Welcome</p>
-        <img src="/images/wave.gif" alt="wave" class="rounded-full max-h-5 sm:max-h-12 bg-slate-800 opacity-80" />
-      </template>
+    <!-- Welcome (top only, hidden on small screens) -->
+    <div v-if="y <= 0" class="hidden sm:flex items-center space-x-3 mr-auto">
+      <p class="text-base sm:text-xl md:text-2xl lg:text-3xl poppins text-white">Welcome</p>
+      <img src="/images/wave.gif" alt="wave" class="rounded-full max-h-8 sm:max-h-12 bg-slate-800 opacity-80" />
     </div>
 
-    <div :class="['items-center gap-12 flex', y > 0 ? 'mr-auto ml-auto' : 'ml-auto']">
-      <a v-for="tab in tabs" :key="tab.name" :href="tab.link" class="duration-200 hover:text-violet-400">
-        <p class="text-md sm:text-xl md:text-2xl lg:text-3xl tech-mono uppercase">{{ tab.name }}</p>
+    <!-- Nav pill when scrolled, inline when at top -->
+    <div
+      :class="y > 0
+        ? 'glass-card flex items-center gap-4 sm:gap-6 md:gap-8 px-5 sm:px-7 py-2 sm:py-3 rounded-full'
+        : 'flex items-center gap-4 sm:gap-8 md:gap-12'"
+    >
+      <a
+        v-for="tab in tabs"
+        :key="tab.name"
+        :href="tab.link"
+        class="duration-200 hover:text-amber-400 tech-mono uppercase"
+        :class="y > 0
+          ? 'text-xs sm:text-sm md:text-base tracking-wider'
+          : 'text-sm sm:text-lg md:text-xl lg:text-2xl'"
+      >
+        {{ tab.name }}
       </a>
     </div>
   </header>

@@ -13,43 +13,44 @@ const leavingPic = () => {
 </script>
 
 <template>
-  <section id="introduction" class="grid items-center grid-cols-2">
-    <div class="flex flex-col gap-6 text-center lg:justify-center lg:text-left md:gap-8">
-      <div class="px-5 space-y-2 backdrop-blur-sm">
-        <p class="text-lg font-bold text-center sm:text-3xl md:text-5xl md:text-left text-cyan-300 poppins">Hello,</p>
-        <p class="text-lg font-bold text-center sm:text-3xl md:text-5xl md:text-left poppins">
-          <span class="text-cyan-300">I'm</span>
+  <section id="introduction" class="flex flex-col-reverse md:grid md:grid-cols-2 items-center gap-8 py-10 md:py-16">
+    <div class="flex flex-col gap-6 text-center md:text-left">
+      <div class="px-2 sm:px-5 space-y-3">
+        <p class="text-sm font-medium text-amber-400 tech-mono tracking-widest uppercase">
+          Hello, I'm
+        </p>
+        <h1 class="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-7xl poppins leading-tight">
           <span
             tabindex="0"
             role="button"
             @mouseleave="leavingPic"
             @focus="hoveringPic"
             @mouseover="hoveringPic"
-            class="text-violet-400 hover:text-amber-600"
+            class="text-amber-400 hover:text-amber-200 transition-colors duration-200"
           >
-            Ardelean Daniel,
+            Ardelean Daniel
           </span>
+        </h1>
+        <p class="text-base font-semibold sm:text-lg md:text-2xl lg:text-3xl poppins text-slate-200 leading-snug">
+          Software Engineer · PhD Researcher · Founder
         </p>
-        <p class="text-lg font-bold sm:text-3xl md:text-5xl poppins text-cyan-300">
-          I build modern software solutions.
-        </p>
-        <p class="text-sm sm:text-md md:text-xl lg:pt-3 tech-mono text-slate-300">
-          Adaptable / Passionate / Ambitious
+        <p class="text-xs sm:text-sm md:text-base tech-mono text-slate-400">
+          Distributed Systems · Applied AI · Backend Security
         </p>
       </div>
 
-      <a
-        :href="`mailto:${WORK_MAIL}`"
-        target="_blank"
-        class="relative items-center self-start block px-6 py-3 mx-5 overflow-hidden transition-all ring-cyan-600 ring-2 group sm:text-lg md:text-xl poppins"
-      >
-        <span class="z-10 w-full transition-colors duration-300 ease-in-out">
+      <div class="px-2 sm:px-5">
+        <a
+          :href="`mailto:${WORK_MAIL}`"
+          target="_blank"
+          class="inline-block px-6 py-2.5 sm:px-8 sm:py-3 poppins font-medium text-sm sm:text-base md:text-lg border-2 border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-950 transition-all duration-200 rounded-sm"
+        >
           Get in touch &rarr;
-        </span>
-      </a>
+        </a>
+      </div>
     </div>
 
-    <div class="grid shadow-2xl place-items-center">
+    <div class="grid place-items-center">
       <img
         ref="imgElem"
         src="/images/me-slate.png"
@@ -57,7 +58,7 @@ const leavingPic = () => {
         @focus="hoveringPic"
         @mouseover="hoveringPic"
         alt="Me pic"
-        class="object-cover z-[2] max-h-[40vh] md:max-h-[50vh] lg:max-h-[70vh]"
+        class="object-cover z-[2] max-h-[35vh] sm:max-h-[45vh] md:max-h-[55vh] lg:max-h-[70vh]"
       />
     </div>
   </section>

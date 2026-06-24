@@ -143,7 +143,7 @@ export const work_experiences: WorkExperience[] = [
   },
   {
     title: 'Full-Stack Developer',
-    technologies: ['.NET', 'C++', 'VueJS'],
+    technologies: ['.NET', 'C++', 'VueJS', 'JavaScript', 'Go'],
     start: 'October 2024',
     end: 'November 2025',
     company: 'OpenText',
@@ -155,7 +155,7 @@ export const work_experiences: WorkExperience[] = [
     link: 'https://www.opentext.com',
   },
   {
-    title: 'Backend Developer',
+    title: 'Full-Stack Developer',
     technologies: ['Golang', 'ExpressJS', 'Docker', 'Kubernetes', 'AWS EKS'],
     start: 'August 2023',
     end: 'December 2023',

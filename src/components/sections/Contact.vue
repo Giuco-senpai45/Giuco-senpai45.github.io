@@ -3,29 +3,29 @@ import { WORK_MAIL, GITHUB_URL, LINKEDIN_URL } from '@/data/constants'
 </script>
 
 <template>
-  <section id="contact" class="flex flex-col items-center">
-    <p class="col-span-2 pb-5 lg:pb-10 section-title text-center">04. Contact</p>
-    <div class="grid grid-cols-2 max-w-3xl justify-center py-10">
-      <div class="space-y-2 px-4 border-r-2 border-slate-700">
-        <h4 class="text-3xl text-amber-500 font-semibold">Want to chat?</h4>
-        <p class="text-lg poppins">
+  <section id="contact" class="flex flex-col items-center py-28">
+    <p class="col-span-2 pb-5 lg:pb-12 section-title text-center">04. Contact</p>
+    <div class="glass-card grid grid-cols-2 max-w-3xl justify-center py-10">
+      <div class="space-y-4 px-4 border-r-2 border-slate-700">
+        <h4 class="text-2xl md:text-3xl text-amber-500 font-semibold poppins">Want to chat?</h4>
+        <p class="text-base md:text-lg poppins leading-relaxed text-slate-300">
           My inbox is open for all. Whether you have a question or just want to say hi, I'll try my best to get back to you!
         </p>
       </div>
-      <div class="flex text-xl px-14 pt-2">
-        <ul class="space-y-2">
+      <div class="flex text-lg md:text-xl px-14 pt-2">
+        <ul class="space-y-4">
           <li>
-            <a :href="GITHUB_URL" target="_blank">
+            <a :href="GITHUB_URL" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors duration-200">
               <i class="fa-brands fa-github" /> GitHub
             </a>
           </li>
           <li>
-            <a :href="LINKEDIN_URL" target="_blank">
-              <i class="fa-brands fa-linkedin" /> Linkedin
+            <a :href="LINKEDIN_URL" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors duration-200">
+              <i class="fa-brands fa-linkedin" /> LinkedIn
             </a>
           </li>
           <li>
-            <a :href="`mailto:${WORK_MAIL}`" target="_blank">
+            <a :href="`mailto:${WORK_MAIL}`" target="_blank" class="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors duration-200">
               <i class="fa-regular fa-envelope" /> E-mail
             </a>
           </li>

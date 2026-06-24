@@ -22,5 +22,53 @@ h3,
 }
 
 .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold poppins text-violet-400 hover:text-violet-300;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold poppins text-amber-400;
+}
+
+/* amber = interactive/clickable and structure */
+.content-link {
+    @apply text-amber-400 hover:text-amber-300 transition-colors duration-200;
+}
+
+/* Glassmorphism card — gradient border via mask-composite trick */
+.glass-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 0.75rem;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(251, 191, 36, 0.45),
+        rgba(255, 255, 255, 0.04) 45%,
+        rgba(139, 92, 246, 0.2) 100%
+    );
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.25s;
+}
+
+.glass-card:hover::before {
+    background: linear-gradient(
+        135deg,
+        rgba(251, 191, 36, 0.75),
+        rgba(255, 255, 255, 0.08) 45%,
+        rgba(139, 92, 246, 0.35) 100%
+    );
 }
